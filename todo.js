@@ -26,7 +26,7 @@ function createListElement() {
     deleteButtonX = document.createTextNode("X");
     deleteButton.appendChild(deleteButtonX);
     li.appendChild(deleteButton);
-    deleteButton.addEventListener("click", deleteItem)
+    deleteButton.addEventListener("click", deleteItem);
     
     function deleteItem() {
         li.classList.toggle("delete");
@@ -40,8 +40,12 @@ function AddListAfterClick() {
 }
 
 function AddListAfterEnter(event) {
-    if(inputLength() > 0 && event.which === 13) {
-        createListElement();
+    if(inputLength() > 0) {
+        userInput.classList.add('validatedInput')
+        if(event.which === 13) {
+            createListElement();
+            userInput.classList.remove('validatedInput')
+        }
     }
 }
 

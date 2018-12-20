@@ -39,17 +39,15 @@ p {
 
 
 #enter {
-	border: none;
-	padding: 5px 15px;
-	border-radius: 5px;
-	color: #04A1BF;
-	background-color: #025F70;
-	transition: all 0.75s ease;
-	-webkit-transition: all 0.75s ease;
-	-moz-transition: all 0.75s ease;
-	-ms-transition: all 0.75s ease;
-	-o-transition: all 0.75 ease;
-	font-weight: normal;
+    background-color: rgb(192, 240, 250); /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:16px;
+    border-radius: 6px;
 }
 
 #enter:hover{
@@ -97,12 +95,21 @@ input {
 	border-radius: 5px;
 	min-width: 65%;
 	padding: 5px;
-	border: none;
+    border: none;
+    border-left: 10px solid red;
+}
+
+.validatedInput {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+    border: none;
+    border-left: 10px solid green;
 }
 
 
 .done {
-	background: #51DF70 !important;
+	background: #51DF70;
 	color: #00891E;
 }
 
